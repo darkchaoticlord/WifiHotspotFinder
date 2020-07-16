@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainWearActivity"
+    tools:deviceIds="wear_round"
+    android:clickable="false"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/maps_pic_2"
+        android:id="@+id/home_search_background">
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_icon"
+            android:adjustViewBounds="true"
+            app:cb_color="#00ccff"
+            app:cb_pressedRingWidth="8dp"
+            android:elevation="2dp"
+            android:clickable="true"
+            android:id="@+id/home_search_button"
+            android:longClickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/home_button_label"
+            android:id="@+id/home_label"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

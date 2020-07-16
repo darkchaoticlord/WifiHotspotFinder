@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jawad.wifihotspotfinder.CardViewLayout"
+    tools:deviceIds="wear_round"
+    android:background="#FF3C00"
+    android:id="@+id/expandable_list_background"
+    android:smoothScrollbar="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <ExpandableListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/round_expandableListView"
+            android:choiceMode="multipleChoice"
+            android:groupIndicator="@null"
+            android:longClickable="true"
+            android:smoothScrollbar="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

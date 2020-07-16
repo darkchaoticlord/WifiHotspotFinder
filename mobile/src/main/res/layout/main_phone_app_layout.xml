@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_material_light"
+    tools:context=".MainPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainPhoneActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="horizontal"
+            android:scrollbarFadeDuration="2"
+            android:scrollbarStyle="outsideOverlay">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/wear_maps"
+                    android:contentDescription="@string/wearPic"
+                    android:paddingBottom="5dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <EditText
+                        android:labelFor="@+id/homeText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:inputType="textPostalAddress"
+                        android:id="@+id/homeText"
+                        android:layout_weight="1"
+                        android:hint="@string/homePostcode"
+                        android:textSize="17sp"
+                        android:fontFamily="sans_serif"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:windowSoftInputMode="stateHidden"/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/setHome"
+                        android:id="@+id/homeButton"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:fontFamily="sans_serif"
+                        android:elevation="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <EditText
+                        android:labelFor="@+id/homeText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:inputType="textPostalAddress"
+                        android:id="@+id/workText"
+                        android:layout_weight="1"
+                        android:hint="@string/workPostcode"
+                        android:textSize="17sp"
+                        android:fontFamily="sans_serif"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:windowSoftInputMode="stateHidden"/>
+
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/setWork"
+                        android:id="@+id/workButton"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:fontFamily="sans_serif"
+                        android:elevation="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="@string/updateWearDatabase"
+                        android:id="@+id/updateWearDatabaseButton"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:fontFamily="sans_serif"
+                        android:elevation="2dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:text="@string/openWearApp"
+                        android:id="@+id/openAppButton"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="17sp"
+                        android:fontFamily="sans_serif"
+                        android:elevation="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

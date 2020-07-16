@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/settings_tab"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/settings_nav_drawer" />
+    </group>
+
+    <item android:title="@string/nav_drawer_group_header">
+        <menu>
+            <item android:id="@+id/update_tab"
+                android:icon="@drawable/update_icon"
+                android:title="@string/updates_nav_drawer" />
+            <item android:id="@+id/about_tab"
+                android:icon="@drawable/about_icon"
+                android:title="@string/about_nav_drawer" />
+        </menu>
+    </item>
+
+</menu>
+
+
+
